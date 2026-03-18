@@ -27,7 +27,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="glass rounded-[2rem] p-6 shadow-panel">
+        <div className="rounded-[2rem] border border-[rgba(250,128,114,0.35)] bg-[rgba(250,128,114,0.12)] p-6 shadow-panel backdrop-blur-xl">
           <div className="mb-5 text-sm uppercase tracking-[0.25em] text-cyan-300/80">Contact & Presence</div>
           <div className="grid gap-4 text-sm text-slate-300">
             <div className="flex items-center gap-3"><Phone className="h-4 w-4 text-cyan-300" /> {basics.phone}</div>

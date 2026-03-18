@@ -19,13 +19,13 @@ export const resumeData = {
   experience: [
     {
       company: "TCS",
-      role: "Solution Architecture",
+      role: "Solution Architect",
       dates: "May 2021 - Till Date",
       location: "United States of America",
       bullets: [
-        "I work as solution & technical architect at TCS, working with global enterprise clients across Healthcare, Banking, Insurance, and Finance — building the data foundations that power smarter decisions, faster.",
+        "I work as solution & technical architect at TCS, working with global enterprise clients across Healthcare, Investment Banking, Insurance, and Finance — building the data lakehouse foundations that power smarter decisions, faster.",
         "I own architectures end to end — from whiteboard to production.",
-        "I've led complex migrations (Teradata → AWS, Hive → Snowflake, DB2 → Snowflake), driven RFP/RFI pre-sales, and advised C-suite stakeholders on future-ready technology strategy."
+        "I've led enterprise data transformation across AWS, Hadoop, Hive, Snowflake, and Databricks — driving complex migrations, architecting modern Lakehouse platforms, and shaping resilient data engineering and governance strategy."
       ]
     }
   ],

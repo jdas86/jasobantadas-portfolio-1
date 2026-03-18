@@ -13,7 +13,10 @@ export function ExpertiseSection() {
         />
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
           {resumeData.skills.map((group) => (
-            <div key={group.group} className="glass rounded-[2rem] p-6">
+            <div
+              key={group.group}
+              className="rounded-[2rem] border border-[rgba(250,128,114,0.35)] bg-[rgba(250,128,114,0.12)] p-6 backdrop-blur-xl"
+            >
               <h3 className="text-lg font-semibold">{group.group}</h3>
               <div className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((item) => <Badge key={item}>{item}</Badge>)}
