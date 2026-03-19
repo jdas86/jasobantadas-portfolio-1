@@ -9,16 +9,27 @@ export function ClientsSection() {
   return (
     <section className="section-pad py-20">
       <div className="container-shell grid gap-8 lg:grid-cols-2">
-        <div className="glass rounded-[2rem] p-6">
-          <SectionHeading eyebrow="Enterprise Client & Product Experience" title="Trusted across global enterprise names" />
+        <div className="rounded-[2rem] bg-blue-900 border border-blue-700 p-6 text-white">
+          <SectionHeading
+            eyebrow="Enterprise Client & Product Experience"
+            title="Trusted across global enterprise names"
+          />
           <div className="mt-6 flex flex-wrap gap-3">
-            {clients.map((item) => <Badge key={item}>{item}</Badge>)}
+            {clients.map((item) => (
+              <Badge key={item}>{item}</Badge>
+            ))}
           </div>
         </div>
-        <div className="glass rounded-[2rem] p-6">
-          <SectionHeading eyebrow="Industries" title="Cross-sector architecture experience" />
+
+        <div className="rounded-[2rem] bg-blue-900 border border-blue-700 p-6 text-white">
+          <SectionHeading
+            eyebrow="Industries"
+            title="Cross-sector architecture experience"
+          />
           <div className="mt-6 flex flex-wrap gap-3">
-            {industries.map((item) => <Badge key={item}>{item}</Badge>)}
+            {industries.map((item) => (
+              <Badge key={item}>{item}</Badge>
+            ))}
           </div>
         </div>
       </div>
