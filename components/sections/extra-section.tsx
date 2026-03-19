@@ -11,16 +11,16 @@ export function ExtraSection() {
           copy="This section ensures nothing from the provided document is dropped."
         />
         <div className="mt-10 grid gap-4">
-          <div className="glass rounded-[2rem] p-6 text-base leading-8 text-slate-300">
+          <div className="rounded-[2rem] bg-blue-900 border border-blue-700 p-6 text-white text-base leading-8">
             {resumeData.basics.summary[2]}
           </div>
-          <div className="glass rounded-[2rem] p-6 text-base leading-8 text-slate-300">
+          <div className="rounded-[2rem] bg-blue-900 border border-blue-700 p-6 text-white text-base leading-8">
             {resumeData.extra[15]}
           </div>
-          <div className="glass rounded-[2rem] p-6 text-base leading-8 text-slate-300">
+          <div className="rounded-[2rem] bg-blue-900 border border-blue-700 p-6 text-white text-base leading-8">
             {resumeData.extra[16]}
           </div>
-          <div className="glass rounded-[2rem] p-6 text-base leading-8 text-slate-300">
+          <div className="rounded-[2rem] bg-blue-900 border border-blue-700 p-6 text-white text-base leading-8">
             {resumeData.extra[17]}
           </div>
         </div>
