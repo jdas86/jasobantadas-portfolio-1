@@ -19,7 +19,7 @@ export function HeroSection() {
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a href="#experience"><Button size="lg">View Experience <ArrowDownRight className="ml-2 h-4 w-4" /></Button></a>
-            <a href="/resume"><Button variant="outline" size="lg">Download Resume <Download className="ml-2 h-4 w-4" /></Button></a>
+            <a href="/resume"><Button size="lg">Download Resume <Download className="ml-2 h-4 w-4" /></Button></a>
           </div>
 
           <div className="mt-8 flex flex-wrap gap-3">
