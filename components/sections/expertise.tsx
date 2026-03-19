@@ -1,6 +1,10 @@
+"use client";
+
+import { motion } from "framer-motion";
 import { resumeData } from "@/data/resume-data";
 import { SectionHeading } from "@/components/section-heading";
 import { Badge } from "@/components/ui/badge";
+import { TiltCard } from "@/components/ui/tilt-card";
 
 export function ExpertiseSection() {
   return (
@@ -8,20 +12,25 @@ export function ExpertiseSection() {
       <div className="container-shell">
         <SectionHeading
           eyebrow="Core Expertise"
-          title="Architecture depth across cloud, data, ML, governance, and platform scale"
+          title="Designed and provided solutions across cloud, data, ML, governance, and platform scale"
           copy="Every skill group below is taken directly from the source profile and preserved as portfolio content."
         />
         <div className="mt-10 grid gap-5 lg:grid-cols-2">
-          {resumeData.skills.map((group) => (
-            <div
+          {resumeData.skills.map((group, idx) => (
+            <motion.div
               key={group.group}
-              className="rounded-[2rem] border border-[rgba(250,128,114,0.35)] bg-[rgba(250,128,114,0.12)] p-6 backdrop-blur-xl"
+              initial={{ opacity: 0, y: 24 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ delay: idx * 0.04 }}
             >
-              <h3 className="text-lg font-semibold">{group.group}</h3>
-              <div className="mt-4 flex flex-wrap gap-2">
-                {group.items.map((item) => <Badge key={item}>{item}</Badge>)}
-              </div>
-            </div>
+              <TiltCard className="p-6">
+                <h3 className="text-lg font-semibold text-white">{group.group}</h3>
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {group.items.map((item) => <Badge key={item}>{item}</Badge>)}
+                </div>
+              </TiltCard>
+            </motion.div>
           ))}
         </div>
       </div>
