@@ -19,7 +19,7 @@ export const resumeData = {
   experience: [
     {
       company: "TCS",
-      role: "Solution Architecture",
+      role: "Solution Architect",
       dates: "May 2021 - Present",
       location: "USA",
       bullets: [
