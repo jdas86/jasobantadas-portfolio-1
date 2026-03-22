@@ -97,9 +97,9 @@ export function LiveCodeBackground() {
       columns = Math.floor(width / fontSize);
 
       trails = Array.from({ length: columns }, () => ({
-        head: Math.random() * -40,
+        head: Math.random() * (height / fontSize),
         length: 8 + Math.floor(Math.random() * 18),
-        speed: reduceMotion ? 0.001 : 0.0045 + Math.random() * 0.003
+        speed: reduceMotion ? 0.001 : 0.01 + Math.random() * 0.01
       }));
     };
 
